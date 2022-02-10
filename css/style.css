@@ -1,0 +1,913 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+/** code by webdevtrick ( https://webdevtrick.com ) **/
+
+footer{
+	position: relative;
+	bottom: 0;
+}
+.footer-distributed{
+	background-color: #100c55d3;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+  position:relative;
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #e2306c;
+}
+
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #d621a0;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+
+}
+
+html{
+  font-size: 80%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position:relative;
+}
+
+html::-webkit-scrollbar{
+  width:.7rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:#fff;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:var(--green);
+}
+
+
+  header{
+    width:100%;
+    left:-120%;
+}
+  header.active{
+    left:0%;
+}
+
+  .home #particles-js{
+    position: absolute;
+    top:0; left:0;
+    height:100%;
+    width:100%;
+    z-index: -4;
+}
+.home::before{
+  content: '';
+  position: relative;
+  top:0; left:0;
+  height:100%;
+  width:100%;
+}
+/* From cssbuttons.io by @westitan */
+button {
+  position: relative;
+  padding: 19px 36px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 40px;
+  border: none;
+ }
+ 
+ button span {
+  position: relative;
+  color: #fff;
+  font-family: Arial;
+  letter-spacing: 8px;
+  z-index: 1;
+ }
+ 
+ button .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+  transition: .5s;
+ }
+ 
+ button .liquid::after,
+ button .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #fff;
+ }
+ 
+ button .liquid::before {
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+ }
+ 
+ button .liquid::after {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, .5);
+  animation: animate 10s linear infinite;
+ }
+ 
+ button:hover .liquid {
+  top: -120px;
+ }
+ 
+ @keyframes animate {
+  0% {
+   transform: translate(-50%, -75%) rotate(0deg);
+  }
+ 
+  100% {
+   transform: translate(-50%, -75%) rotate(360deg);
+  }
+ }
+
+  section.about,section.skills{
+    padding:2rem 9%;
+    min-height: 75vh;
+}
+    
+  
+  .container-fluid{
+      overflow: hidden;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      width: 100%;
+      background-color:#0f0735f1
+    
+  }
+  h1{
+    font-family: 'Mochiy Pop P One', sans-serif;
+  }
+  .typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+  }
+  
+   .nav-item:hover {
+      background-color:rgba(194, 3, 130, 0.897);
+      border-radius: 15px;
+      
+    }
+
+    .active{
+      color: rgb(247, 253, 252);
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .image{width: 300px;
+      height: 350px;}
+    .home .content img{
+      width: 300px;
+      height: 350px;
+      border: 15px solid rgb(10, 2, 54);
+      padding: 10px;
+      margin: 20px;
+      border-radius: 50%;
+    }
+    .home {
+      padding: 40px;
+      margin-top: 30px;
+  }
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    left: -120%;
+  }
+  .b-example-divider {
+    height: 3rem;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.089);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 1px;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+    
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+}
+div {
+  display: block;
+}
+.chart {
+  background: rgba(33, 152, 189, 0.315);
+  justify-content: flex-start;
+  border-radius: 50px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 500px;
+}
+  .chart span {
+      /* You can modify the value below to change the distance between the percentage number and the bar */
+      margin-left: 5px;
+      color: #fff;
+      font-weight: bolder;
+  }
+
+.bar {
+  /* You can modify the total time used for the animation here */
+  animation: load 3s normal forwards;
+  /* 
+  Add a little spice by having a shadow below the bar.
+  Feel free to comment out this line below to have an even LITE version :D 
+  */
+  box-shadow: 0 10px 40px -10px #fff;
+
+  border-radius: 100px;
+  background: rgb(6, 248, 196);
+  height: 15px;
+  width: 0;
+} 
+
+
+  .lead{
+    color: rgb(95, 9, 76);
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+  }
+  
+  #aboutme{
+    font-family: 'Mochiy Pop P One', sans-serif;
+  }
+  body {
+    font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  
+  #timeline {
+    display: flex;
+    background-color: #031625;
+    position: relative;
+    z-index: 1;
+  }
+  #timeline:hover .tl-item {
+    width: 32.10%;
+  }
+  
+  .tl-item {
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    width: 33.33%;
+    height: 100vh;
+    min-height: 600px;
+    color: #fff;
+    overflow: hidden;
+    transition: width 0.5s ease;
+  }
+  .tl-item:before, .tl-item:after {
+    transform: translate3d(0, 0, 0);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .tl-item:after {
+    background: rgba(3, 22, 37, 0.85);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  .tl-item:before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+    z-index: 1;
+    opacity: 0;
+    transform: translate3d(0, 0, 0) translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .tl-item:hover {
+    width: 30% !important;
+  }
+  .tl-item:hover:after {
+    opacity: 0;
+  }
+  .tl-item:hover:before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) translateY(0);
+    transition: opacity 1s ease, transform 1s ease 0.25s;
+  }
+  .tl-item:hover .tl-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.75s ease 0.5s;
+  }
+  .tl-item:hover .tl-bg {
+    filter: grayscale(0);
+  }
+  
+  .tl-content {
+    transform: translate3d(0, 0, 0) translateY(25px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 1.618em;
+    top: 55%;
+    opacity: 0;
+  }
+  .tl-content h1 {
+    font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #1779cf;
+    font-size: 1.44rem;
+    font-weight: normal;
+  }
+  .tl-content ul li{
+    text-align: left;
+    list-style: square;
+  }
+  
+  .tl-year {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .tl-year p {
+    font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.728rem;
+    line-height: 0;
+  }
+  
+  .tl-bg {
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 0;
+    left: 0;
+    background-size:cover;
+    background-position: center center;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+  }
+  .Yearly-timeline{ font-family: 'Poppins', sans-serif; }
+        .Yearly-timeline:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .Yearly-timeline .timeline{
+            width: calc(50% + 17px);
+            padding: 0 30px 30px 0;
+            float: left; 
+            position: relative;
+        }
+        .Yearly-timeline .timeline:before,
+        .Yearly-timeline .timeline:after{
+            content: '';
+            height: 60px;
+            width: 2px;
+            border-left: 2px solid #70d6ff;
+            transform: rotate(-45deg);
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+        }
+        .Yearly-timeline .timeline:after{
+            background-color: #fff;
+            height: 20px;
+            width: 20px;
+            border: 6px solid #70d6ff;
+            border-radius: 50%;
+            right: 0;
+        }   
+        .Yearly-timeline .timeline-content{
+            color: #555;
+            background: #70d6ff;
+            text-align: center;
+            min-height: 170px;
+            padding: 30px 35px 35px;
+            border-radius: 15px 15px 0 15px;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+        .Yearly-timeline .timeline-content:before{
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            left: 17px;
+            right: 17px;
+            top: 17px;
+            bottom: 17px;
+            z-index: -1;
+        }
+        .Yearly-timeline .timeline-content:hover{ text-decoration: none; }
+        .Yearly-timeline .timeline-icon{
+            color: #777;
+            font-size: 35px;
+        }
+        .Yearly-timeline .title{
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0 0 8px;
+        }
+        .Yearly-timeline .description{
+            color: #777;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            line-height: 18px;
+            margin: 0;
+        }
+        .Yearly-timeline .timeline:nth-child(even){
+            padding: 0 0 30px 30px;
+            float: right;
+        }
+        .Yearly-timeline .timeline:nth-child(even):before{
+            transform: rotate(45deg);
+            right: auto;
+            left: 30px;
+        }
+        .Yearly-timeline .timeline:nth-child(even):after{
+            right: auto;
+            left: 0;
+        }
+        .Yearly-timeline .timeline:nth-child(even) .timeline-content{ border-radius: 15px 15px 15px 0; }
+        .Yearly-timeline .timeline:nth-child(4n+2):before,
+        .Yearly-timeline .timeline:nth-child(4n+2):after{
+            border-color: #ff70a6;
+        }
+        .Yearly-timeline .timeline:nth-child(4n+2) .timeline-content{
+            background: #ff70a6;
+        }
+        .Yearly-timeline .timeline:nth-child(4n+3):before,
+        .Yearly-timeline .timeline:nth-child(4n+3):after{
+            border-color: #ff9770;
+        }
+        .Yearly-timeline .timeline:nth-child(4n+3) .timeline-content{
+            background: #ff9770;
+        }
+        .Yearly-timeline .timeline:nth-child(4n+4):before,
+        .Yearly-timeline .timeline:nth-child(4n+4):after{
+            border-color: #ffd670;
+        }
+        .Yearly-timeline .timeline:nth-child(4n+4) .timeline-content{
+            background:#ffd670;
+        }
+        @media screen and (max-width:767px){
+            .Yearly-timeline .timeline{
+                width: 100%;
+                padding: 30px 0 0 30px;
+                margin: 0 0 20px;
+            }   
+            .Yearly-timeline .timeline:before,
+            .Yearly-timeline .timeline:nth-child(even):before{
+                transform: rotate(-45deg);
+                bottom: auto;
+                top: 0;
+                right: auto;
+                left: 30px;
+            }
+            .Yearly-timeline .timeline:after,
+            .Yearly-timeline .timeline:nth-child(even):after{
+                bottom: auto;
+                top: 0;
+                right: auto;
+                left: 0;
+            }
+            .Yearly-timeline .timeline-content,
+            .Yearly-timeline .timeline:nth-child(even) .timeline-content{
+                border-radius: 0 15px 15px 15px;
+            }
+        }
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 180px;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 1000px;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+        .col-md-4{
+          overflow: hidden;
+        }
+        
+         
+          .row,
+          .row > .column {
+            padding: 8px;
+          }
+          
+          /* Create three equal columns that floats next to each other */
+          .column {
+            float: left;
+            width: 33.33%;
+            display: none; /* Hide all elements by default */
+          }
+         
+
+          
+          
+          /* Clear floats after rows */ 
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Content */
+          #certificate-box{
+            margin: auto;
+            width: 75%;
+            border: 3px solid rgba(0, 128, 0, 0);
+            padding: 10px;
+          }
+          .certificate-content {
+            background-color: #c3e44d;
+            padding: 10px;
+            border-radius: 10px;
+          }
+          .certificate-content:hover{
+            background-color: #31ee509f;
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+          }
+          
+          /* The "show" class is added to the filtered elements */
+          .show {
+            display: block;
+          }
+          
+          /* Style the buttons */
+          .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: rgba(233, 230, 54, 0.671);
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+          
+          .btn:hover {
+            background-color: #ddd;
+          }
+          h4{
+            color: white;
+            background-color: black;
+          }
+
+         
+          
+        @keyframes line {
+          0% {
+            background-position-x: 390px;
+          }
+        }
+        
+
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+          h4{
+            font-size: 1rem;
+          }
+
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+       
+
+  
+  @media (max-width:420px){
+    .b-example-divider {
+      height: 3rem;
+      width:100%;
+      background-color: rgba(0, 0, 0, 0.089);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 1px;
+      box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+    }
+    .tl-year {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+    }
+    .tl-content h1 {
+      font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      color: #1779cf;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    .tl-content ul li{
+      text-align: left;
+      list-style: square;
+    }
+    .tl-content {
+      transform: translate3d(0, 0, 0) translateY(25px);
+      position: relative;
+      z-index: 1;
+      font-size: smaller;
+      text-align: left;
+      margin: 0 1.618em;
+      top: 45%;
+      opacity: 0;
+    }
+    h4{
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    #myBtnContainer{
+      padding-left: 125px;
+      padding-top: 10px;
+      justify-items: center;
+    }
+    .contact-image{
+      flex: 50%;
+      width: 500;
+      height: 500;
+    }
+    .contact-coloumn{
+      flex: 100%;
+      width: 100%;
+      padding-top: 500px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    
+    #myBtnContainer{
+      padding-top: 10px;
+      }
+  
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: rgba(233, 230, 54, 0.671);
+    justify-content: left;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .resumebutton{
+    width:100%;
+    padding-bottom: 10px;
+    padding-right: 60px;
+  }
+  .image{
+    height: 75%;
+    width:65%
+  }
+}
+@media only screen and (max-width: 600px) {
+  html,body{
+    position:absolute;
+    width: 100vw;
+  }
+  #contact_img{
+    flex: 50%;
+    max-width:400px;
+    height: 500px;
+  }
+  .typewriter h3 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    font-weight: bolder;
+    }
+    .resumebutton{
+      float: left;
+    }
+}
