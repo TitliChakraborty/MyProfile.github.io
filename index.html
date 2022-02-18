@@ -23,6 +23,10 @@
     position: relative;
     
   }
+  .nav-item{
+    padding-right: 20px;
+  }
+  
       input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -64,33 +68,33 @@
       </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-light py-0">
       <div class="container-fluid py-3">
-        <a class="navbar-brand" href="#" style="font-weight: bold;">MY PROFILE</a>
+        <a class="navbar-brand px-3" href="#" style="font-weight: bold;">MY PROFILE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"style="padding-left: 350px">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
             
             <li class="nav-item " >
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#home" style="color: rgba(255, 255, 255, 0.884);">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
+              <a class="nav-link" href="#about" style="color: rgba(255, 255, 255, 0.884);">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Professional Skills</a>
+              <a class="nav-link" href="#skills"style="color: rgba(255, 255, 255, 0.884);">Professional Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
+              <a class="nav-link" href="#education"style="color: rgba(255, 255, 255, 0.884);">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects &amp; Training</a>
+              <a class="nav-link" href="#projects"style="color: rgba(255, 255, 255, 0.884);">Projects &amp; Training</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#certificates">Certifications</a>
+              <a class="nav-link" href="#certificates"style="color: rgba(255, 255, 255, 0.884);">Certifications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact"style="color: rgba(255, 255, 255, 0.884);">Contact</a>
             </li>
         
           </ul>
@@ -98,7 +102,6 @@
       </div>
     </nav>
   </header>
- 
   
     <section class="home" id="home">
       <div id="particles-js"></div>
@@ -473,7 +476,7 @@
           <h3 style="font-family: 'Quintessential', cursive; font-weight: bolder; color: rgb(182, 10, 53); background-color: rgba(128, 255, 0, 0.699); padding:3px 3px; border-radius: 5px;">Please Fill Up This Form</h3>
 
           <div class="contact-container">
-            <form method="post" action="/">
+            <form  novalidate="novalidate">
               <label for="fname"> Name</label>
               <input name="name" type="text" id="name"  placeholder="Your name" width="100%">
                <br>
