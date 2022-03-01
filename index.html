@@ -480,7 +480,7 @@
           <h3 style="font-family: 'Quintessential', cursive; font-weight: bolder; color: rgb(182, 10, 53); background-color: rgba(128, 255, 0, 0.699); padding:3px 3px; border-radius: 5px;">Please Fill Up This Form</h3>
 
           <div class="contact-container">
-            <form  novalidate="novalidate">
+            <form   method="POST" action="https://script.google.com/macros/s/AKfycbyKqHBWQfi8bZ9VhYOC1O2sylAKZ7LEFlhuvWAsNEt0FTnYmRpwojsIy0wHcRU7UTg6/exec" autocomplete="off" name="google-sheet" id="contact-form" >
               <label for="fname"> Name</label>
               <input name="name" type="text" id="name"  placeholder="Your name" width="100%">
                <br>
@@ -595,12 +595,21 @@
 <script type="text/javascript" src="js/vanilla-tilt.js"></script>
 
 
-
-
-
 <script>
-
+  var form = document.getElementById('contact-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("contact-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      alert('Message Sent Sucessfully')
+    });
+  });
 </script>
+   
 
   </body>
 </html>
