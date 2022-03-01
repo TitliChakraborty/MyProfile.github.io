@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-----<script>document.getElementsByTagName("html")[0].className += " js";</script>---->
     <style>
@@ -59,7 +59,7 @@
   }
  
     </style>
-    <title>Welcome To Tiyasa's Profile</title>
+    <title>Tiyasa's Profile</title>
     
   </head>
   <body>
@@ -68,9 +68,9 @@
       </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-light py-0">
       <div class="container-fluid py-3">
-        <a class="navbar-brand px-3" href="#" style="font-weight: bold;">MY PROFILE</a>
+        <a class="navbar-brand px-3" href="#" style="font-weight: bold;font-family: 'Great Vibes', cursive;font: size 1.2em; ;">Tiyasa Chakraborty</a>
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"style="padding-left: 350px">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"style="padding-left: 250px">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
             
             <li class="nav-item " >
@@ -295,7 +295,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="Yearly-timeline">
-                    <div class="timeline">
+                 
+                    <div class="timeline" >
                       <a href="static/Excel_auto_cer.pdf" class="timeline-content">
                         <div class="timeline-icon"><i class="fa fa-facebook"></i></div>    
                         <h3 class="title">Training &amp; Internship</h3>
@@ -305,6 +306,7 @@
                         </ul>
                     </a>
                     </div>
+                  
                     <div class="timeline">
                         <a href="" class="timeline-content">
                             <div class="timeline-icon"><i class="fa fa-twitter"></i></div>    
@@ -315,6 +317,7 @@
                             </ul>
                         </a>
                     </div>
+                  
                     <div class="timeline">
                       <a href="" class="timeline-content">
                         <div class="timeline-icon"><i class="fa fa-instagram"></i></div>
@@ -329,6 +332,7 @@
                         </ul>
                     </a>
                     </div>
+                  
                     <div class="timeline">
                         <a target="_blank" href="static/student-innovation.pdf" class="timeline-content">
                             <div class="timeline-icon"><i class="fa fa-linkedin"></i></div>    
@@ -338,10 +342,12 @@
                             </ul>
                         </a>
                     </div>
+                  
                 </div>
             </div>
         </div>
     </div>
+    
     </section>
     <div class="b-example-divider"></div>
     <section class="certificates" id="certificates">
@@ -567,7 +573,7 @@
       </footer>
 </section>
 
-  <script src="#"></script>
+  
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -590,25 +596,10 @@
 
 
 
+
+
 <script>
-const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll(".navbar navbar-expand-lg navbar-dark bg-light py-0 .collapse navbar-collapse ul .nav-item");
-window.onscroll = () => {
-  var current = "";
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
-  });
-
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    if (li.classList.contains(current)) {
-      li.classList.add("active");
-    }
-  });
-};
 </script>
 
   </body>
